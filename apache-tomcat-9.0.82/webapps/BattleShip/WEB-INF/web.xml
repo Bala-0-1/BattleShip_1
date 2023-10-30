@@ -1,0 +1,17 @@
+<web-app>
+
+<servlet>
+    <servlet-name>ServletTest</servlet-name>
+    <servlet-class>ServletTest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ServletTest</servlet-name>
+    <servlet-url>/ServletTest</servlet-url>
+</servlet-mapping>
+
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
