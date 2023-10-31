@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "BattleShip/WEB-INF/lib/servlet-api.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
+}   

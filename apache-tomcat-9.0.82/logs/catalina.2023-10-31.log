@@ -1,448 +1,3 @@
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:19:31.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.1
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.8.1+1
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:19:31.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/conf/logging.properties
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:19:31.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/temp
-30-Oct-2023 22:19:31.706 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/balakumaranb/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-30-Oct-2023 22:19:31.826 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:19:31.839 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [224] milliseconds
-30-Oct-2023 22:19:31.855 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-30-Oct-2023 22:19:31.855 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
-30-Oct-2023 22:19:31.858 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs]
-30-Oct-2023 22:19:31.963 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs] has finished in [104] ms
-30-Oct-2023 22:19:31.963 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip]
-30-Oct-2023 22:19:31.972 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip]
-	java.lang.IllegalStateException: Error starting child
-		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
-		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
-		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
-		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1184)
-		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1932)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
-		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1094)
-		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:476)
-		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1617)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
-		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
-		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
-		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
-		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
-		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
-	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/BattleShip]]
-		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
-		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
-		... 37 more
-	Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in servlet mapping
-		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3032)
-		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:917)
-		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1567)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1334)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		... 38 more
-30-Oct-2023 22:19:31.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip] has finished in [9] ms
-30-Oct-2023 22:19:31.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager]
-30-Oct-2023 22:19:31.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager] has finished in [14] ms
-30-Oct-2023 22:19:31.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples]
-30-Oct-2023 22:19:32.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples] has finished in [99] ms
-30-Oct-2023 22:19:32.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT]
-30-Oct-2023 22:19:32.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT] has finished in [7] ms
-30-Oct-2023 22:19:32.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager]
-30-Oct-2023 22:19:32.104 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager] has finished in [11] ms
-30-Oct-2023 22:19:32.105 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:19:32.110 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [270] milliseconds
-30-Oct-2023 22:20:25.808 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-30-Oct-2023 22:20:25.809 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:20:25.811 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-30-Oct-2023 22:20:25.820 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:20:25.822 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:34:07.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.1
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.8.1+1
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:34:07.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/conf/logging.properties
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-30-Oct-2023 22:34:07.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-30-Oct-2023 22:34:07.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-30-Oct-2023 22:34:07.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:34:07.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:34:07.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/temp
-30-Oct-2023 22:34:07.865 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/balakumaranb/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-30-Oct-2023 22:34:07.984 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:34:07.997 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [221] milliseconds
-30-Oct-2023 22:34:08.012 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-30-Oct-2023 22:34:08.012 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
-30-Oct-2023 22:34:08.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs]
-30-Oct-2023 22:34:08.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs] has finished in [107] ms
-30-Oct-2023 22:34:08.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip]
-30-Oct-2023 22:34:08.131 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip]
-	java.lang.IllegalStateException: Error starting child
-		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
-		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
-		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
-		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1184)
-		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1932)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
-		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1094)
-		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:476)
-		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1617)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
-		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
-		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
-		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
-		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
-		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
-	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/BattleShip]]
-		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
-		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
-		... 37 more
-	Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in servlet mapping
-		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3032)
-		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:917)
-		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1567)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1334)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		... 38 more
-30-Oct-2023 22:34:08.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip] has finished in [10] ms
-30-Oct-2023 22:34:08.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager]
-30-Oct-2023 22:34:08.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager] has finished in [14] ms
-30-Oct-2023 22:34:08.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples]
-30-Oct-2023 22:34:08.240 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples] has finished in [94] ms
-30-Oct-2023 22:34:08.240 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT]
-30-Oct-2023 22:34:08.247 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT] has finished in [7] ms
-30-Oct-2023 22:34:08.247 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager]
-30-Oct-2023 22:34:08.257 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager] has finished in [10] ms
-30-Oct-2023 22:34:08.259 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:34:08.263 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [266] milliseconds
-30-Oct-2023 22:36:48.397 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/BattleShip]
-30-Oct-2023 22:36:48.434 SEVERE [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Error during context [/BattleShip] restart
-	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/BattleShip]]
-		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1451)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1414)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1653)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-	Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in servlet mapping
-		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3032)
-		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:917)
-		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1567)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1334)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		... 16 more
-30-Oct-2023 22:36:58.440 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/BattleShip]
-30-Oct-2023 22:36:58.465 SEVERE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Error during context [/BattleShip] restart
-	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/BattleShip]]
-		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1451)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1414)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1653)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-	Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in servlet mapping
-		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3032)
-		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:917)
-		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1567)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1334)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		... 16 more
-30-Oct-2023 22:37:08.470 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/BattleShip]
-30-Oct-2023 22:37:08.493 SEVERE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Error during context [/BattleShip] restart
-	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/BattleShip]]
-		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1451)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1414)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1653)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-	Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in servlet mapping
-		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3032)
-		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:917)
-		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1567)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1334)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		... 16 more
-30-Oct-2023 22:38:38.558 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/BattleShip]
-30-Oct-2023 22:38:38.584 SEVERE [Catalina-utility-2] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [10] column [32]
-	org.xml.sax.SAXParseException; systemId: file:/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip/WEB-INF/web.xml; lineNumber: 10; columnNumber: 32; The element type "url-pattern" must be terminated by the matching end-tag "</url-pattern>".
-		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
-		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1282)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1451)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1414)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1653)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-30-Oct-2023 22:38:38.584 SEVERE [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip/WEB-INF/web.xml]
-	org.xml.sax.SAXParseException; systemId: file:/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip/WEB-INF/web.xml; lineNumber: 10; columnNumber: 32; The element type "url-pattern" must be terminated by the matching end-tag "</url-pattern>".
-		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
-		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
-		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1282)
-		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:991)
-		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4820)
-		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1451)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1414)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1653)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-30-Oct-2023 22:38:38.585 SEVERE [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [10] column [32]
-30-Oct-2023 22:38:38.587 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
-30-Oct-2023 22:38:38.587 SEVERE [Catalina-utility-2] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
-30-Oct-2023 22:38:38.588 SEVERE [Catalina-utility-2] org.apache.catalina.core.StandardContext.startInternal Context [/BattleShip] startup failed due to previous errors
-30-Oct-2023 22:38:48.596 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/BattleShip]
-30-Oct-2023 22:39:37.022 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-30-Oct-2023 22:39:37.023 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:39:37.025 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-30-Oct-2023 22:39:37.029 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:39:37.032 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:39:38.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
-30-Oct-2023 22:39:38.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
-30-Oct-2023 22:39:38.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
-30-Oct-2023 22:39:38.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
-30-Oct-2023 22:39:38.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.1
-30-Oct-2023 22:39:38.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
-30-Oct-2023 22:39:38.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-30-Oct-2023 22:39:38.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.8.1+1
-30-Oct-2023 22:39:38.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
-30-Oct-2023 22:39:38.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:39:38.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/conf/logging.properties
-30-Oct-2023 22:39:38.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82
-30-Oct-2023 22:39:38.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/temp
-30-Oct-2023 22:39:38.747 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/balakumaranb/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-30-Oct-2023 22:39:38.864 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:39:38.876 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [214] milliseconds
-30-Oct-2023 22:39:38.891 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-30-Oct-2023 22:39:38.892 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
-30-Oct-2023 22:39:38.894 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs]
-30-Oct-2023 22:39:38.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/docs] has finished in [102] ms
-30-Oct-2023 22:39:38.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip]
-30-Oct-2023 22:39:39.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip] has finished in [14] ms
-30-Oct-2023 22:39:39.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager]
-30-Oct-2023 22:39:39.028 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/manager] has finished in [18] ms
-30-Oct-2023 22:39:39.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples]
-30-Oct-2023 22:39:39.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/examples] has finished in [89] ms
-30-Oct-2023 22:39:39.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT]
-30-Oct-2023 22:39:39.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/ROOT] has finished in [7] ms
-30-Oct-2023 22:39:39.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager]
-30-Oct-2023 22:39:39.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/host-manager] has finished in [10] ms
-30-Oct-2023 22:39:39.137 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:39:39.145 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [268] milliseconds
-30-Oct-2023 22:40:57.844 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-30-Oct-2023 22:40:57.845 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:40:57.847 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-30-Oct-2023 22:40:57.857 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-30-Oct-2023 22:40:57.859 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 11:29:41.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 11:29:41.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 11:29:41.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -552,7 +107,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 11:39:05.227 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 11:39:05.240 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 11:39:05.253 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 11:39:13.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 11:39:13.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 11:39:13.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -608,7 +162,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 11:40:29.763 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 11:40:29.780 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 11:40:29.786 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 14:42:23.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 14:42:23.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 14:42:23.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -659,7 +212,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 14:42:24.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/demo1] has finished in [6] ms
 31-Oct-2023 14:42:24.005 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 14:42:24.010 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [307] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 21:01:08.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 21:01:08.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 21:01:08.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -764,7 +316,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 21:01:28.041 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 21:01:28.056 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 21:01:28.067 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 21:21:05.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 21:21:05.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 21:21:05.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -877,7 +428,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 21:46:19.336 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 21:46:19.350 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 21:46:19.361 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 21:46:24.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 21:46:24.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 21:46:24.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -931,7 +481,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 21:59:20.146 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 21:59:20.166 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 21:59:20.171 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 22:00:38.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 22:00:38.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 22:00:38.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -995,7 +544,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 22:32:43.989 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 22:32:44.000 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 22:32:44.002 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 22:32:47.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 22:32:47.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 22:32:47.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -1049,7 +597,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 22:36:01.993 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 22:36:02.008 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 22:36:02.017 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 22:36:05.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 22:36:05.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 22:36:05.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -1105,7 +652,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 22:39:05.048 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 22:39:05.059 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 22:39:05.074 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 22:39:09.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 22:39:09.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 22:39:09.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -1159,7 +705,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 22:39:22.533 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 22:39:22.546 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 22:39:22.559 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 22:41:02.790 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 22:41:02.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 22:41:02.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
@@ -1213,7 +758,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 31-Oct-2023 22:42:32.048 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 31-Oct-2023 22:42:32.059 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 31-Oct-2023 22:42:32.073 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 31-Oct-2023 23:01:14.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
 31-Oct-2023 23:01:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
 31-Oct-2023 23:01:14.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
