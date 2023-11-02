@@ -6,12 +6,13 @@
             "type": "shell",
             "command": "javac",
             "args": [
-                // "-cp",
-                // "WEB-INF/lib/servlet-api.jar",
+                "-cp",
+                "/Users/balakumaranb/JavaServerProjects/apache-tomcat-9.0.82/webapps/BattleShip/WEB-INF/lib/servlet-api.jar",
                 "-d",
-                "../WEB-INF/classes",
+                "BattleShip/WEB-INF/classes",
                 "BattleShip/src/*.java"
             ],
+
             "group": {
                 "kind": "build",
                 "isDefault": true
