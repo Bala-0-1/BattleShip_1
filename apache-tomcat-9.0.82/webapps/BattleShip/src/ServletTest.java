@@ -2,12 +2,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/ServletTest")
+// @WebServlet("/ServletTest")
 public class ServletTest extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -21,13 +21,10 @@ public class ServletTest extends HttpServlet {
         while ((line = reader.readLine()) != null) {
             requestBody.append(line);
         }
-
-        System.out.println("(GET) Received JSON data: " + requestBody.toString());
-
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-
-        response.getWriter().write(jsonData.toString());
+        if(requestBody.toString().equals("Main")){
+            response.sendRedirect("Main.html");
+            response.getWriter().write("Fuck yeah baby!");
+        }
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {

@@ -12,7 +12,7 @@ function _(id) {
 createOpponentGrid(); 
 createPlayerGrid();
 
-let serverURL = "http://localhost:8080/"
+let serverURL = "http://localhost:8888/"
 
 async function getGrid() {
 

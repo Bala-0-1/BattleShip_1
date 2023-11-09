@@ -2,7 +2,7 @@ function _(id){
     return document.getElementById(id);
 }
 
-const serverURL = "http://localhost:8080/";
+const serverURL = "BattleShip/ServletTest";
 
 let mode = "login";
 let userName;
@@ -122,8 +122,28 @@ function incorrectPassword(warningMessage){
     passwordAttempts += 1;
 }
 
-function goToMainPage(){
-        window.location.href = 'Main.html';
+async function goToMainPage(){
+    try{
+
+        const response = await fetch(serverURL, {
+            method: 'POST', 
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify("Main")
+        });
+        if (!response.ok) {
+            throw new Error("Yeah could not find shit.");
+        }
+
+        console.log(response.json)
+
+    } catch (error) {
+
+        console.log('There was an error with the fetch operation: ', error);
+        return null;
+
+    }
 }
 
 

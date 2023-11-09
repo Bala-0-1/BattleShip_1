@@ -32,3 +32,8 @@
 02-Nov-2023 12:48:39.067 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
 02-Nov-2023 12:48:39.067 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
 02-Nov-2023 12:48:39.071 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+02-Nov-2023 13:17:15.458 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+02-Nov-2023 13:17:15.458 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+02-Nov-2023 13:17:15.460 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+02-Nov-2023 13:17:18.239 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/BattleShip'
+02-Nov-2023 13:17:18.273 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'

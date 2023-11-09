@@ -13,8 +13,33 @@
     <url-pattern>/ServletTest</url-pattern>
 </servlet-mapping>
 
+<!-- <servlet> 
+    <servlet-name>css</servlet-name> 
+    <servlet-class>./css</servlet-class> 
+</servlet> 
+
+<servlet-mapping> 
+    <servlet-name>css</servlet-name> 
+    <url-pattern>./css/*</url-pattern> 
+</servlet-mapping> 
+
+<servlet> 
+    <servlet-name>Js</servlet-name> 
+    <servlet-class>./Js</servlet-class> 
+</servlet> 
+
+<servlet-mapping> 
+    <servlet-name>Js</servlet-name> 
+    <url-pattern>./Js/*</url-pattern> 
+</servlet-mapping>  -->
+
+  
 <welcome-file-list>
-    <welcome-file>html/Login.html</welcome-file>
-    <welcome-file>html/Login.jsp</welcome-file>
+    <welcome-file>Login.html</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+    <!-- <welcome-file>Main.html</welcome-file>
+    <welcome-file>Main.jsp</welcome-file>
+    <welcome-file>Game.html</welcome-file>
+    <welcome-file>Game.jsp</welcome-file> -->
 </welcome-file-list>
 </web-app>
